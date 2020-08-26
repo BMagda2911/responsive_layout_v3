@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  width: 100%;
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+.name {
+	font-size: 1.25em;
+}
+
+.name,
+.main-nav li {
+	text-align: center;
+	background: #fff;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+.name a, 
+.main-nav a {
+  padding: 10px 15px;
+  display: block;
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.main-header {
+  text-align: center;
+	padding-top: 2em;
+	padding-bottom: 1.5em;
+	background: #e1e1e1;
+	margin-bottom: 2em;
+}
