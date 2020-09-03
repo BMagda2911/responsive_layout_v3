@@ -15,39 +15,62 @@ body {
 a {
 	text-decoration: none;
 }
+
+/* ---- Header Container ---- */
+
 .name {
 	font-size: 1.25em;
+  background: #e1e1e1;
 }
 
 .name,
 .main-nav li {
 	text-align: center;
+  font-weight: 900;
 	background: #fff;
 	margin-top: 6px;
 	margin-bottom: 6px;
+	list-style-type: none;
 }
 
 .main-nav a {
 	font-size: .95em;
-	color: #3acec2;
+	color: black;
 	text-transform: uppercase;
 }
 
 .main-nav a:hover {
-	color: #093a58;
+	background-color: #e1e1e1;
 }
 
-.name a, 
+.name a,
 .main-nav a {
   padding: 10px 15px;
   display: block;
+  font-size: 1em;
 }
+
+/* ---- First Section Container ---- */
+
+.profile-image {
+  width: 100% ;
+  height: auto ;
+  margin-left: 0 auto;
+}
+
+  .first-section {
+    margin: 0 auto;
+
+  }
 
 /* ---- Layout Containers ---- */
 
-.container {
-	padding-left: 1em;
-	padding-right: 1em;
+.container,
+.portfolio-section,
+.portfolio-footer,
+.first-section {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
 }
 
 .main-header {
@@ -56,4 +79,28 @@ a {
 	padding-bottom: 1.5em;
 	background: #e1e1e1;
 	margin-bottom: 2em;
+}
+
+.portfolio-page-image {
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+}
+
+.portfolio-footer {
+  background: #e1e1e1;
+}
+
+.portfolio-section {
+  width: 80%;
+  margin:0 auto;
+}
+
+p {
+padding: 0px 80px;
+margin: auto;
+}
+
+.portfolio-headlines {
+  text-align: center;
 }
