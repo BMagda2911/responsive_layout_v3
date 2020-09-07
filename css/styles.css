@@ -25,7 +25,7 @@ a {
   padding: 20px 0 20px 0;
 }
 
-.main-nav li {
+.main-nav a {
 	text-align: center;
   font-weight: 900;
 	background: #fbf6f4;
@@ -70,7 +70,7 @@ a {
   padding: 40px 0;
 }
 
-/* ---- Layout Containers ---- */
+/* ---- General Layout Container ---- */
 
 .container,
 .portfolio-section,
@@ -139,7 +139,6 @@ p {
 
 .footer-contacts {
   padding: 0 0 10px 0;
-
 }
 
 .phone-nr {
