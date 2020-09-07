@@ -8,6 +8,8 @@ body {
   background-color: #fbf6f4;
   width: 100%;
 	font-family: 'Varela Round', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
 	line-height: 1.6;
 	color: black;
 }
@@ -20,6 +22,7 @@ a {
 
 .name {
 	font-size: 2em;
+  padding: 20px 0 20px 0;
 }
 
 .main-nav li {
@@ -29,6 +32,7 @@ a {
 	margin-top: 6px;
 	margin-bottom: 6px;
 	list-style-type: none;
+  font-size: 1.5em;
 }
 
 .main-nav a {
@@ -51,7 +55,7 @@ a {
 /* ---- First Section Container ---- */
 
 .profile-image {
-  width: 90% ;
+  width: 80% ;
   height: auto ;
   margin-left: 0 auto;
   margin-top: 50px;
@@ -60,7 +64,10 @@ a {
 
 .first-section {
   margin: 0 auto;
+}
 
+.first-section p {
+  padding: 40px 0;
 }
 
 /* ---- Layout Containers ---- */
@@ -75,9 +82,7 @@ a {
 
 .main-header {
   text-align: center;
-	padding-top: 2em;
 	background: #d2a990;
-	margin-bottom: 2em;
 }
 
 .portfolio-page-image {
@@ -87,9 +92,7 @@ a {
 }
 
 .portfolio-section {
-  width: 95%;
   margin:0 auto;
-  padding: 0 5px;
 }
 
 p {
@@ -117,13 +120,65 @@ p {
 
 .portfolio-footer p{
   padding: 30px;
+  text-align: center;
 }
 
 .portfolio-footer-headline {
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 0 0 0;
+}
+
+.ft-contacts-container {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  font-weight: 100;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .footer-contacts {
-  display: block;
+  padding: 0 0 10px 0;
+
+}
+
+.phone-nr {
+  font-weight: 900;
+}
+
+
+/* ---- Footer-Navbar Container ---- */
+
+.footer-navbar {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background-color: #fbf6f4;
+  border-top: 2px solid #bc7f5a;
+  color: black;
+}
+
+.ft-navbar {
+  position: absolute;
+  padding-left: 1.5em;
+	padding-right: 1.5em;
+  top: 50%;
+}
+
+.el1 {
+  left: 0;
+}
+
+.el2 {
+  right: 0;
+}
+
+.footer-BTT-btn {
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.footer-BTT-btn:hover {
+  text-decoration: underline;
+  color: #bc7f5a;
 }
