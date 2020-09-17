@@ -23,14 +23,14 @@ a {
 .name {
 	font-size: 2em;
   padding: 20px 0 20px 0;
-  color: white;
+  color: #fbf6f4;
 }
 
 .main-header {
   padding-left: 1.5em;
   padding-right: 1.5em;
   text-align: center;
-	background: #558CA7;
+	background: #62929e;
 }
 
 .main-nav a {
@@ -51,18 +51,16 @@ a {
 .profile-image {
   width: 80% ;
   height: auto ;
-  margin-left: 0 auto;
   margin-top: 50px;
-  margin-bottom: 0;
 }
 
 .intro-section {
   margin: 0 auto;
 }
 
-.intro-section p {
+.intro-text {
   padding: 40px 5px;
-  color:white;
+  color:#fbf6f4;
 }
 
 /* ---- General Layout Container ---- */
@@ -82,7 +80,7 @@ a {
 }
 
 .portfolio-section {
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 p {
@@ -98,27 +96,32 @@ p {
 
 .top-portfolio-headline {
   text-align: center;
-  margin: 40px auto;
+  margin-bottom: 40px;
+  padding-top: 40px;
   text-transform: uppercase;
+}
+
+article:nth-child(7) {
+  margin-bottom: 30px;
 }
 
 /* ---- Footer Container ---- */
 
 .portfolio-footer {
-  background: #558CA7;
-  color:white;
+  background: #62929e;
+  color:#fbf6f4;
 }
 
-.portfolio-footer p{
+.portfolio-footer p {
   padding: 30px;
   text-align: center;
-  color: white;
+  color: #fbf6f4;
 }
 
 .portfolio-footer-headline {
   text-align: center;
   padding: 30px 0 0 0;
-  color: white;
+  color: #fbf6f4;
 }
 
 .ft-contacts-container {
@@ -128,7 +131,6 @@ p {
   font-weight: 100;
   margin: 0 auto;
   padding-bottom: 30px;
-  border-bottom: 1px solid #044473;
 }
 
 .footer-contacts {
@@ -139,7 +141,6 @@ p {
   font-weight: 900;
 }
 
-
 /* ---- Footer-Navbar Container ---- */
 
 .footer-navbar {
@@ -148,13 +149,14 @@ p {
   min-height: 100px;
   background-color: #fbf6f4;
   color: black;
+  /* border-top: 1px solid #044473;*/
 }
 
 .ft-navbar {
   position: absolute;
   padding-left: 1.5em;
 	padding-right: 1.5em;
-  top: 50%;
+  top: 40%;
 }
 
 .el1 {
@@ -165,20 +167,17 @@ p {
   right: 0;
 }
 
-.footer-BTT-btn {
+.footer-btn {
   text-transform: uppercase;
   color: inherit;
 }
 
-.footer-BTT-btn:hover {
-  color: #6ECBBF;
-  text-decoration-line: overline;
+.btn-home,
+.btn-portfolio,
+.btn-skills,
+.btn-contact {
+  display: none;
 }
-
-.footer-BTT-btn:hover:after {
-  background-color: #fbf6f4;
-}
-
 
 /* ---- Media Query for tablets at 768px ---- */
 
@@ -187,7 +186,7 @@ p {
   .main-header,
   .main-nav,
   .main-nav a {
-    background: #558CA7;
+    background: #62929e;
   }
 
   .container {
@@ -202,7 +201,31 @@ p {
 		display: inline-block;
     margin: 0;
     padding: 20px 5px;
-    color: white;
+    color: #fbf6f4;
+    text-decoration-line: overline;
+  }
+
+  .intro-section {
+    width: 90%;
+    min-height: 233px;
+    height: fit-content;
+    margin: 1.5em auto;
+    padding: 40px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .intro-text {
+    padding: 0;
+    text-align: left;
+    font-size: larger;
+  }
+
+  .profile-image {
+    width: 50%;
+    float: right;
+    margin: 0;
+    padding-left: 10px;
   }
 
   .portfolio-section {
@@ -210,6 +233,10 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
+  }
+
+  p {
+    padding: 30px 30px;
   }
 
   article {
@@ -227,13 +254,41 @@ p {
     padding-bottom: 10px;
   }
 
-  .footer-BTT-btn:hover {
-    color: #6ECBBF;
+  .portfolio-footer p {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  .ft-navbar {
+    top: 25%;
+  }
+
+  .footer-btn {
+    color: #044473;
     text-decoration-line: overline;
   }
 
-  .footer-BTT-btn:hover:after {
-    background-color: #fbf6f4;
+  .btn-btt {
+    display: none;
+  }
+
+  .btn-home,
+  .btn-portfolio,
+  .btn-skills,
+  .btn-contact {
+    display: inline-block;
+  }
+
+  .btn-portfolio,
+  .btn-skills,
+  .btn-home {
+    padding-right: 10px;
+  }
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
   }
 }
 
@@ -241,13 +296,42 @@ p {
 @media (min-width: 1024px){
 
   body,
-  .main-header,
-  .portfolio-footer {
-    background: #558CA7;
+  .main-header {
+    background:#62929e;
   }
+
   .container {
     width: 85%;
-    max-width: 1150px;
+    margin: 0 auto;
+    background: #fbf6f4;
+  }
+
+  .body-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .nav-wrapper {
+    margin: 0 auto;
+    width: 85%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  .main-nav {
+    float: right;
+    padding-top: 70px;
+  }
+
+  .main-nav a {
+    padding: 0 5px;
+    margin: 0 auto;
+  }
+
+  .name {
+    float: left;
+    padding: 0;
+    padding-top: 40px;
     margin: 0 auto;
   }
 
@@ -256,41 +340,79 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
+    justify-content: center;
+  }
+
+  .top-portfolio-headline {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    text-transform: uppercase;
   }
 
   article {
     width: 33%;
   }
 
-.intro-section {
-  width: 80%;
-  max-height: 500px;
-}
+  .intro-section {
+    width: 85%;
+    max-height: 500px;
+    margin: 0 auto;
+    padding: 50px 1.5em;
+  }
 
-.intro-text {
-  width: 50%;
-  float: left;
-  padding: 0;
-}
+  .intro-text {
+    width: 50%;
+    float: left;
+    padding: 0;
+  }
 
-.profile-image {
-  width: 50%;
-  float: right;
-}
+  .profile-image {
+    width: 50%;
+    float: right;
+    padding-left: 30px;
+  }
 
-.footer-BTT-btn:hover {
-  color: #6ECBBF;
-  text-decoration-line: overline;
-}
+  .portfolio-footer {
+    font-size: larger;
+    background: #fbf6f4;
+    width: 85%;
+    margin: 0 auto;
+    color: black;
+    border-top: 1px solid #044473;
+    border-bottom: 1px solid #044473;
+  }
 
-.footer-BTT-btn:hover:after {
-  background-color: #fbf6f4;
-}
+  .portfolio-footer-headline {
+    color: black;
+  }
 
-.clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
-}
+  .portfolio-footer p {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 53%;
+    color: black;
+  }
+
+  .footer-navbar {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .footer-btn {
+    color: #044473;
+    text-decoration-line: overline;
+  }
+
+  .footer-btn:hover {
+    color: #6ECBBF;
+    text-decoration-line: underline;
+  }
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
 
 }
