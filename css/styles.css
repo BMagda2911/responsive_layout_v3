@@ -294,7 +294,7 @@ article:nth-child(7) {
 
   body,
   .main-header {
-    background:#62929e;
+    background: #62929e;
   }
 
   .main-container {
@@ -358,7 +358,8 @@ article:nth-child(7) {
   }
 
   article,
-  article:nth-child(odd) {
+  article:nth-child(odd),
+  article:last-child {
     width: 33%;
     margin: 0;
     padding: 0;
