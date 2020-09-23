@@ -9,90 +9,91 @@
 </head>
 
 <body class="body-container">
-  <header class="main-header">
-    <div class="nav-wrapper clearfix">
-      <h1 class="name">Student Name</h1>
-        <nav class="main-nav">
-          <a class="home-link" href="#">home</a>
-          <a class="porfolio-link" href="#portfolio-opening">portfolio</a>
-          <a class="skills-link" href="#skills">skills</a>
-          <a class="contact-link" href="#contact">contact</a>
-        </nav>
+  <div class="inner-body-wrapper">
+    <header class="main-header">
+      <div class="nav-wrapper clearfix">
+        <h1 class="name">Student Name</h1>
+          <nav class="main-nav">
+            <a href="#">home</a>
+            <a href="#portfolio-opening">portfolio</a>
+            <a href="#skills">skills</a>
+            <a href="#contact">contact</a>
+          </nav>
+      </div>
+      <div class="intro-section clearfix">
+        <img src="images/responsive-layout-profile.png" alt="sample profile picture of person" class="profile-image">
+        <p class="intro-text">
+          Hi! I'm a front-end developer who loves responsive design and CSS.
+          I recently finished learning front-end development at Treehouse and am excited
+          to put all my skills to use!
+        </p>
+      </div>
+    </header>
+
+    <div class="primary-container">
+      <h3 id="portfolio-opening" class="top-portfolio-headline">Portfolio</h3>
+      <main class="portfolio-body">
+        <article>
+          <img class="portfolio-page-image" src="images/portfolio-1.png" alt="Picture of data files folder mock-up">
+          <h2 class="portfolio-headlines">Marketing Page</h2>
+          <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+        </article>
+
+        <article>
+          <img class="portfolio-page-image" src="images/portfolio-2.png" alt="Picture of a search page mock-up">
+          <h2 class="portfolio-headlines">Search Page</h2>
+          <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+        </article>
+
+        <article>
+          <img class="portfolio-page-image" src="images/portfolio-3.png" alt="Picture of travel app mock-up">
+          <h2 class="portfolio-headlines">Travel App</h2>
+          <p>This project compares  travek times based on different transportation methsid and tells you the best one.</p>
+        </article>
+
+        <article>
+          <img class="portfolio-page-image" src="images/portfolio-4.png" alt="Picture of a spot on a map mock-up">
+          <h2 class="portfolio-headlines">Map of Favorite Spots</h2>
+          <p>This project uses mapping apis to plot point for my favorite spots in the city for a do-it-yourself walking tour.</p>
+        </article>
+
+        <article>
+          <img class="portfolio-page-image" src="images/portfolio-5.png" alt="Picture of gallery mock-up">
+          <h2 class="portfolio-headlines">Photo Gallery</h2>
+          <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+        </article>
+
+        <article>
+          <img class="portfolio-page-image" src="images/portfolio-6.png" alt="Picture of calculator mock-up">
+          <h2 class="portfolio-headlines">Calculator</h2>
+          <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+        </article>
+
+        <article id="skills">
+          <img class="portfolio-page-image" src="images/skills-sample-img.png" alt="Picture of a man showing his skills">
+          <h2 class="portfolio-headlines">Skills</h2>
+          <p> Some of my technical skills include:<br>HTML5, CSS3, Javascript, Vue.js, Java, Python, MySQL, MS Access, PHP, Swift, Wordpress, Photoshop</p>
+        </article>
+      </main>
     </div>
-    <div class="intro-section clearfix">
-      <img src="images/responsive-layout-profile.png" alt="sample profile picture" class="profile-image">
-      <p class="intro-text">
-        Hi! I'm a front-end developer who loves responsive design and CSS.
-        I recently finished learning front-end development at Treehouse and am excited
-        to put all my skills to use!
-      </p>
-    </div>
-  </header>
-  <div class="main-container">
-    <h3 id="portfolio-opening" class="top-portfolio-headline">Portfolio</h3>
 
-    <main class="portfolio-section">
-
-      <article>
-        <img class="portfolio-page-image" src="images/portfolio-1.png" alt="Picture of data files folder mock-up">
-        <h2 class="portfolio-headlines">Marketing Page</h2>
-        <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-      </article>
-
-      <article>
-        <img class="portfolio-page-image" src="images/portfolio-2.png" alt="Picture of a search page mock-up">
-        <h2 class="portfolio-headlines">Search Page</h2>
-        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-      </article>
-
-      <article>
-        <img class="portfolio-page-image" src="images/portfolio-3.png" alt="Picture of travel app mock-up">
-        <h2 class="portfolio-headlines">Travel App</h2>
-        <p>This project compares  travek times based on different transportation methsid and tells you the best one.</p>
-      </article>
-
-      <article>
-        <img class="portfolio-page-image" src="images/portfolio-4.png" alt="Picture of a spot on a map mock-up">
-        <h2 class="portfolio-headlines">Map of Favorite Spots</h2>
-        <p>This project uses mapping apis to plot point for my favorite spots in the city for a do-it-yourself walking tour.</p>
-      </article>
-
-      <article>
-        <img class="portfolio-page-image" src="images/portfolio-5.png" alt="Picture of gallery mock-up">
-        <h2 class="portfolio-headlines">Photo Gallery</h2>
-        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-      </article>
-
-      <article>
-        <img class="portfolio-page-image" src="images/portfolio-6.png" alt="Picture of calculator mock-up">
-        <h2 class="portfolio-headlines">Calculator</h2>
-        <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-      </article>
-
-      <article id="skills">
-        <img class="portfolio-page-image" src="images/skills-sample-img.png" alt="Picture of a man showing his skills">
-        <h2 class="portfolio-headlines">Skills</h2>
-        <p> Some of my technical skills include:<br>HTML5, CSS3, Javascript, Vue.js, Java, Python, MySQL, MS Access, PHP, Swift, Wordpress, Photoshop</p>
-      </article>
-    </main>
-  </div>
-
-  <footer id="contact" class="portfolio-footer">
-    <h3 class="portfolio-footer-headline">CONTACT</h3>
-    <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-    <div class="ft-contacts-container">
-      <div class="footer-contacts">Phone <span class="phone-nr">+1 (111) 555-1234</span></div>
-      <div class="footer-contacts email">E-Mail <b>email@yoursite.com</b></div>
-    </div>
-  </footer>
-  <div class="footer-navbar">
-    <div class="ft-navbar el1">Student Name</div>
-    <div class="ft-navbar el2">
-      <a href="#" class="footer-btn btn-btt">Back to Top</a>
-      <a href="#" class="footer-btn btn-home">Home</a>
-      <a href="#portfolio-opening" class="footer-btn btn-portfolio">Portfolio</a>
-      <a href="#skills" class="footer-btn btn-skills">Skills</a>
-      <a href="#contact" class="footer-btn btn-contact">Contact</a>
+    <footer id="contact" class="portfolio-footer">
+      <h3 class="portfolio-footer-headline">CONTACT</h3>
+      <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+      <div class="ft-contacts-container">
+        <div class="footer-contacts">Phone <span class="phone-nr">+1 (111) 555-1234</span></div>
+        <div class="footer-contacts">E-Mail <span class="email">email@yoursite.com</span></div>
+      </div>
+    </footer>
+    <div class="footer-navbar">
+      <div class="ft-navbar-el el-name">Student Name</div>
+      <div class="ft-navbar-el el-links">
+        <a href="#" class="footer-btn btn-btt">Back to Top</a>
+        <a href="#" class="footer-btn btn-home">Home</a>
+        <a href="#portfolio-opening" class="footer-btn btn-portfolio">Portfolio</a>
+        <a href="#skills" class="footer-btn btn-skills">Skills</a>
+        <a href="#contact" class="footer-btn btn-contact">Contact</a>
+      </div>
     </div>
   </div>
 </body>

@@ -27,7 +27,7 @@ a {
 }
 
 .main-header {
-  padding-left: 1.5em;
+  padding-left: 1.5em; /* 14px times 1.5 = 21px */
   padding-right: 1.5em;
   text-align: center;
 	background: #62929e;
@@ -36,7 +36,6 @@ a {
 .main-nav a {
   display: block;
   text-align: center;
-  font-size: 1em;
   font-weight: 900;
 	background: #fbf6f4;
 	margin-top: 6px;
@@ -64,26 +63,23 @@ a {
 
 /* ---- General Layout Container ---- */
 
-.portfolio-section,
+.portfolio-body,
 .portfolio-footer {
-	padding-left: 1.5em;
+	padding-left: 1.5em; /* 14px times 1.5 = 21px */
 	padding-right: 1.5em;
 }
 
 .portfolio-page-image {
-  width: auto ;
   max-width: 100% ;
-  height: auto ;
 }
 
-.portfolio-section {
+.portfolio-body {
   margin: 0 auto;
 }
 
 p {
   text-align: center;
   padding: 20px 5px 40px 5px;
-  margin: auto;
 }
 
 .portfolio-headlines {
@@ -94,7 +90,7 @@ p {
 .top-portfolio-headline {
   text-align: center;
   margin-bottom: 40px;
-  padding-top: 40px;
+  margin-top: 40px;
   text-transform: uppercase;
 }
 
@@ -117,7 +113,7 @@ article:nth-child(7) {
 
 .portfolio-footer-headline {
   text-align: center;
-  padding: 30px 0 0 0;
+  padding: 50px 0 0 0;
   color: #fbf6f4;
 }
 
@@ -127,28 +123,25 @@ article:nth-child(7) {
   text-align: center;
   font-weight: 100;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
-.footer-contacts {
-  padding: 0 0 10px 0;
-}
-
-.phone-nr {
+.phone-nr,
+.email {
   font-weight: 900;
+  padding-left: 10px;
 }
 
 /* ---- Footer-Navbar Container ---- */
 
 .footer-navbar {
   position: relative;
-  width: 100%;
   min-height: 100px;
   background-color: #fbf6f4;
   color: black;
 }
 
-.ft-navbar {
+.ft-navbar-el {
   position: absolute;
   padding-left: 1.5em;
 	padding-right: 1.5em;
@@ -156,11 +149,11 @@ article:nth-child(7) {
   font-weight: 900;
 }
 
-.el1 {
+.el-name {
   left: 0;
 }
 
-.el2 {
+.el-links {
   right: 0;
 }
 
@@ -186,7 +179,7 @@ article:nth-child(7) {
     background: #62929e;
   }
 
-  .main-container {
+  .primary-container {
     margin: 0 auto;
   }
 
@@ -207,7 +200,7 @@ article:nth-child(7) {
     min-height: 233px;
     height: fit-content;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 40px 2px;
   }
 
   .intro-text {
@@ -217,13 +210,13 @@ article:nth-child(7) {
   }
 
   .profile-image {
-    width: 50%;
+    width: 45%;
     float: right;
     margin: 0;
     padding-left: 10px;
   }
 
-  .portfolio-section {
+  .portfolio-body {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -251,17 +244,29 @@ article:nth-child(7) {
     padding-bottom: 10px;
   }
 
-  .portfolio-footer p {
-    padding-left: 140px;
-    padding-right: 140px;
+  .portfolio-footer {
+    font-size: larger;
   }
 
-  .ft-navbar {
+  .portfolio-footer p {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+
+  .portfolio-footer-headline {
+    padding: 70px 0 0 0;
+  }
+
+  .ft-contacts-container {
+    padding-bottom: 70px;
+  }
+
+  .ft-navbar-el {
     top: 25%;
   }
 
   .footer-btn {
-    color: #044473;
+    color: #62929e;
     text-decoration-line: overline;
   }
 
@@ -290,18 +295,22 @@ article:nth-child(7) {
 }
 
 /* ---- Media Query for desktop screens at 1024px---- */
-@media (min-width: 1024px){
 
+@media (min-width: 1024px){
   body,
   .main-header {
     background: #62929e;
+    width: 100%;
   }
 
-  .main-container {
-    width: 85%;
-    margin: 0 auto;
+  .main-header {
+    padding-right: 21px; /* == 1.5em */
     padding-left: 21px;
-    padding-right: 21px;
+  }
+
+  .primary-container {
+    width: 100%;
+    margin: 0 auto;
     background: #fbf6f4;
   }
 
@@ -312,9 +321,6 @@ article:nth-child(7) {
 
   .nav-wrapper {
     margin: 0 auto;
-    width: 85%;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
   }
 
   .main-nav {
@@ -331,26 +337,25 @@ article:nth-child(7) {
     float: left;
     padding: 0;
     padding-top: 40px;
-    margin: 0 auto;
   }
 
-  .portfolio-section {
+  .portfolio-body {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0;
+    margin-left: 21px;
+    margin-right: 21px;
   }
 
   .portfolio-page-image {
     width: 100% ;
   }
-  /* das muss noch mal gegoogelt werden https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child
-  .portfolio-page-image:nth-children(1, 2, 4, 5) {padding-right: 10px}
-  */
 
   .top-portfolio-headline {
     text-align: center;
+    margin-top: 0;
     margin-bottom: 40px;
     padding-top: 40px;
     text-transform: uppercase;
@@ -360,22 +365,24 @@ article:nth-child(7) {
   article,
   article:nth-child(odd),
   article:last-child {
-    width: 33%;
+    width: 32%;
     margin: 0;
-    padding: 0;
+  }
+
+  .inner-body-wrapper {
+    padding: 0 25px;
   }
 
   .intro-section {
-    width: 85%;
+    width: 100%;
     max-height: 500px;
-    margin: 0 auto;
     padding: 50px 0;
   }
 
   .intro-text {
     width: 50%;
     float: left;
-    padding: 0;
+    font-size: large;
   }
 
   .profile-image {
@@ -387,31 +394,31 @@ article:nth-child(7) {
   .portfolio-footer {
     font-size: larger;
     background: #fbf6f4;
-    width: 85%;
-    margin: 0 auto;
+    width: 100%;
     color: black;
     border-top: 1px solid #62929e;
     border-bottom: 1px solid #62929e;
+  }
+  
+  .portfolio-footer p {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+    width: 53%;
+    color: black;
   }
 
   .portfolio-footer-headline {
     color: black;
   }
 
-  .portfolio-footer p {
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 60%;
-    color: black;
-  }
-
   .footer-navbar {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
   }
 
   .footer-btn {
-    color: #044473;
+    color: #62929e;
     text-decoration-line: overline;
   }
 
@@ -425,5 +432,4 @@ article:nth-child(7) {
     display: table;
     clear: both;
   }
-
 }
