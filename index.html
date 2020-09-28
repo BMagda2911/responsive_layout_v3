@@ -5,7 +5,7 @@
   <title>Project Two</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Varela+Round&display=swap" rel="stylesheet" type="text/css">
 </head>
 
 <body class="body-container">
@@ -13,12 +13,12 @@
     <header class="main-header">
       <div class="nav-wrapper clearfix">
         <h1 class="name">Student Name</h1>
-          <nav class="main-nav">
-            <a href="#">home</a>
-            <a href="#portfolio-opening">portfolio</a>
-            <a href="#skills">skills</a>
-            <a href="#contact">contact</a>
-          </nav>
+        <nav class="main-nav">
+          <a href="#">home</a>
+          <a href="#portfolio-opening">portfolio</a>
+          <a href="#skills">skills</a>
+          <a href="#contact">contact</a>
+        </nav>
       </div>
       <div class="intro-section clearfix">
         <img src="images/responsive-layout-profile.png" alt="sample profile picture of person" class="profile-image">
@@ -68,13 +68,30 @@
           <h2 class="portfolio-headlines">Calculator</h2>
           <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
         </article>
-
-        <article id="skills">
-          <img class="portfolio-page-image" src="images/skills-sample-img.png" alt="Picture of a man showing his skills">
-          <h2 class="portfolio-headlines">Skills</h2>
-          <p> Some of my technical skills include:<br>HTML5, CSS3, Javascript, Vue.js, Java, Python, MySQL, MS Access, PHP, Swift, Wordpress, Photoshop</p>
-        </article>
       </main>
+      <div id="skills" class="skills-section">
+        <img class="skills-image" src="images/skills-sample-img.png" alt="Picture of a man showing his skills">
+        <h2 class="portfolio-headlines">Skills</h2>
+        <p> Some of my technical skills include:</p>
+        <div class="skills-list-container">
+          <ul class="skills-list-left">
+            <li> HTML5</li>
+            <li> CSS3</li>
+            <li> Javascript</li>
+            <li> Vue.js</li>
+            <li> Java</li>
+            <li> Python</li>
+          </ul>
+          <ul class="skills-list-right">
+            <li> MySQL</li>
+            <li> MS Access</li>
+            <li> PHP</li>
+            <li> Swift</li>
+            <li> Wordpress</li>
+            <li> Photoshop</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <footer id="contact" class="portfolio-footer">
